@@ -1,0 +1,16 @@
+﻿<Window x:Class="ExerciceDockPanel_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Exercice DockPanel" Height="350" Width="525">
+    <DockPanel>
+        <TextBlock FontSize="32" Text="Choix de couleur" TextAlignment="Center" Margin="10" DockPanel.Dock="Top"/>
+        <StackPanel DockPanel.Dock="Left">
+            <Button Name="btnAqua" Content="Aqua" FontWeight="Bold" Click="ChoisirCouleur_Click"/>
+            <Button Name="btnCrimson" Content="Crimson" Click="ChoisirCouleur_Click"/>
+            <Button Name="btnLime" Content="Lime" Click="ChoisirCouleur_Click"/>
+            <Button Name="btnPeru" Content="Peru" Click="ChoisirCouleur_Click"/>
+        </StackPanel>
+        <TextBlock Text="Cégep de Thetford" DockPanel.Dock="Bottom" TextAlignment="Right"/>
+        <TextBlock Name="tbCouleur" Background="Aqua"/>
+    </DockPanel>
+</Window>
